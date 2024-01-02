@@ -1,0 +1,62 @@
+.Add-form {
+  max-width: 400px;
+  margin: 56px auto 0px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #5e888e;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.Add-form h1 {
+  text-align: center;
+  color: #333;
+}
+
+.Add-form input,
+.Add-form select,
+.Add-form button {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.priority-label {
+  display: block;
+  margin: 10px 0;
+}
+
+.priority-label select {
+  width: 100%;
+}
+
+button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.priority-label option[value="low"] {
+  color: #66bb6a; /* Green */
+}
+
+.priority-label option[value="medium"] {
+  color: #ffca28; /* Amber */
+}
+
+.priority-label option[value="high"] {
+  color: #ef5350; /* Red */
+}
+.nav-link {
+  color: white;
+}

@@ -1,0 +1,145 @@
+.App {
+  background-color: rgb(4, 4, 4);
+}
+.tasks-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.header {
+  color: #f0f0f0;
+}
+
+.tasks-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  height: 100%;
+
+  margin: 5px 5px 5px 5px;
+}
+.task:hover {
+  animation: shake 0.5s ease-in-out infinite;
+  box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+}
+
+.task {
+  background-color: #f0f0f0;
+  margin-bottom: 100px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  transition: transform ease 0.5s, box-shadow ease 0.5s;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  margin: 10px;
+}
+.task h2,
+.task h5,
+.task p {
+  margin: 10px 0;
+}
+
+.add-task-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.task-buttons-container {
+  position: relative;
+}
+
+input {
+  width: 250px;
+  padding: 10px;
+  border: 1px solid grey;
+}
+.formButton {
+  border: none;
+
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+}
+
+.form {
+  max-width: 400px;
+  height: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  background-color: #f8f8f8;
+  text-align: center;
+  animation: fadeInUp 0.5s ease-in-out;
+}
+
+.box1 {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+}
+.search-input {
+  border-radius: 10px;
+}
+
+.header {
+  color: black;
+  flex-grow: 1;
+}
+
+.sort-container,
+.filter-container {
+  margin: 10px;
+}
+
+.sort-container button {
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 10px;
+  width: auto;
+}
+
+.filter-container label {
+  margin-right: 8px;
+}
+
+.filter-container select {
+  border-radius: 10px;
+  padding: 8px;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  .box1 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .search-input {
+    border-radius: 10px;
+    width: 100px;
+  }
+
+  .sort-container,
+  .filter-container {
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+}
